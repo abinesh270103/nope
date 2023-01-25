@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device=width,initial-scale=1.0">
+   <title>review</title>
+   <base href="https://www.w3schools.com/"></base>
+   <style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+}
+table, th, td {
+  border: 1px solid black;
+}
+h1{
+background-color:#00bcd4;
+font-style:italic;
+font-weight:bold
+;
+}
+</style> 
+ </head>
+ <body>
+ <h1>Attributes</h1>
+ <p>action attribute</p>
+ <form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+ <h1>accept attribute</h1>
+
+<form action="/action_page.php">
+  <label for="img">Select image:</label>
+  <input type="file" id="img" name="img" accept="image/*">
+  <input type="submit">
+</form>
+<h1>accept-charset attribute</h1>
+
+<form action="/action_page.php" accept-charset="utf-8">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<h1>video attribute</h1>
+
+<video width="320" height="240" controls autoplay>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<h1> audio autoplay attribute</h1>
+
+
+<audio controls autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<h1> cols attributes</h1>
+
+<textarea rows="4" cols="50">
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+</textarea>
+<h1>Global attributes</h1>
+<h1>lang</h1>
+<p lang="fr">Ceci est un paragraphe.</p>
+<h1>style</h1>
+<h1 style="color:blue;text-align:center;">This is a header</h1>
+<p style="color:green;">This is a paragraph.</p>
+<h1>title</h1>
+<p><abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<p title="Free Web tutorials">W3Schools.com</p>
+<h1>hidden</h1>
+<p hidden>This paragraph should be hidden.</p>
+<p>This is a visible paragraph.</p>
+<p><b>Note:</b> The hidden attribute is not supported in IE10 or earlier versions.</p>
+<h1>Boolean attributes</h1>
+<h1>autoplay</h1>
+<video width="320" height="240" controls loop muted autoplay>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<h1>required</h1>
+<form action="/action_page.php" method="get" id="nameform">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text"required id="lname" name="lname">
+</form>
+<button type="submit" form="nameform" value="Submit">Submit</button>
+<h1>disabled</h1>
+<button type="submit"disabled form="nameform" value="Submit">Submit</button>
+ <h1>multiple attribute</h1>
+<form action="/action_page.php">
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="files" multiple><br><br>
+  <input type="submit">
+</form>
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<h1><center><mark>HTML 1&15 TAG</center></mark></h1>
+<h1>1.comment </h1>
+	<p>This is a paragraph.</p>
+	<hr>
+	<h1>2.DOCTYPE</h1>
+	<p>In HTML 5, the declaration</p>
+	<hr>
+	<h1>3.a </h1>
+	<a href="https://vishva1212.github.io/layout1/">abi</a>
+	<hr>
+	<h1>4.abbr</h1>
+	
+	The <p title="world">WHO was founded in 1948.</P>
+    <hr>
+	<h1>5.acronym </h1>
+	<p>Not Supported in HTML5.</p>
+	<hr>
+	<h1>6.address </h1>
+	<address>
+		Written by <a href="https://vishva1212.github.io/website-2/">address</a>.<br> 
+		Visit us at:<br>
+		Example.com<br>
+		Box 564, Disneyland<br>
+		USA
+	</address>
+		<hr>
+		<h1>7.applet </h1>
+		<p>Not Supported in HTML5.</p>
+		<hr>
+		<h1>8.area </h1>
+		<img src="computer.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+<map name="workmap">
+		<area shape="rect" coords="34,44,270,350" alt="Computer 1" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_areamap">
+  <area shape="rect" coords="290,172,333,250" alt="cellPhone" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_areamap">
+  <area shape="circle" coords="337,300,44" alt="coffee" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_areamap">
+
+			<map name="workmap">
+			  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+			  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+			  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+			</map>
+			<hr>
+			<h1>9.article</h1>
+			<article>
+			<h2>Google Chrome</h2>
+			<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+			</article>
+			<hr>
+			<h1>10.aside</h1>
+			<aside>
+				<h4>Epcot Center</h4>
+				<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+			</aside>
+			<h1>11.audio </h1>
+			<audio controls>
+			  <audio width="300" height="200" autoplay mute controls>
+<source src="C:\Users\abinesh\Desktop\FABEVY\FED05\pratice\abi 3.mp3">
+</audio></h3>
+			</audio>
+			<hr>
+			<h1>12.b </h1>
+			<p>This is normal text - <b>and this is bold text</b>.</p>
+			<hr>
+			<h1>13.base</h1>
+			<p><a href="html/default.asp">HTML base tag</a> - Notice that the link opens in a new window, even if it has no target="_blank" attribute. This is because the target attribute of the base element is set to "_blank".</p>
+			<hr>
+			<h1>14.basefont</h1>
+			<p>Not Supported in HTML5.</p>
+			<hr>
+				<h1>15.bdi</h1>
+				Bi-Directional Isolation.
+			<ul>
+				 <li>User <bdi>hrefs</bdi>: 60 points</li>
+				 <li>User <bdi>jdoe</bdi>: 80 points</li>
+				 <li>User <bdi>إيان</bdi>: 90 points</li>
+			</ul>
+<h1><center><mark>HTML 15&30 TAG</center></mark></h1>
+<h1>16.bdo(Bi-Directional Override)</h1>
+<p>This paragraph will go left-to-right.</p>  
+<p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p>
+<h3>tag is used to <mark>override the current text direction.</mark></h3>
+<hr>  
+<h1>17.Big</h1>
+<p>Not Supported in HTML5.</p>
+<hr>
+<h1>18.blockquote</h1>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years,WWF has been protecting the future of nature.The world's leading conservation organization,WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+<h4>The tag specifies a section that is quoted from another source.
+Browsers usually indent elements (look at example below to see how to remove the indentation).</h4>
+</blockquote>
+<hr>
+<h1>19.body</h1>
+<h4>  The body tag defines the document's body.
+The <mark>body element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</mark>
+Note: There can only be one body element in an HTML document.</h4>
+<hr>
+<h1>20.br</h1>
+<p>Html<br>css<br>js<br>br<br>tag</p>
+<hr>
+<h1>21.button</h1>
+<button type="button" onclick="alert('Hello world!')">button</button>
+
+ <hr>
+ <h1>22.canvas</h1>
+<canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#00bcd4";
+ctx.fillRect(0, 0, 80, 100);
+</script>
+<h4>The canvas tag is used to <mark>draw graphics,</mark> on the fly, via scripting (usually JavaScript).</h4>
+<hr>
+<h1>23.caption</h1>
+<table style="border: 1px solid black">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+<hr>
+<h1>24.center</h1>
+<p>Not Supported in HTML5.</p>
+<hr>
+<h1>25.cite</h1>
+<img src="C:\Users\abinesh\Desktop\FABEVY\GIT\images\old 1.jpg" width="10%">
+<p><cite>The Scream</cite>by Edward Munch. Phone in 1893.</p>
+<h4>The cite tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+Note: A person's name is not the title of a work.
+The text in the cite element usually renders in italic.</h4>
+<hr>
+<h1>26.code</h1>
+<p>The HTML  <mark>(monospace)</mark><code>button</code> tag defines a clickable button.</p>
+<p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+<h4>The code tag is used to <mark>define a piece of computer code.</mark> The content inside is displayed in the browser's default monospace font.</h4>
+ <hr>
+ <h1>27.col,28.colgroup</h1>
+<table>
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:blue">
+  </colgroup>
+  <tr>
+    <th>ktm</th>
+    <th>rc</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>rc</td>
+    <td>390</td>
+    <td>$3 lakh</td>
+  </tr>
+  <tr>
+    <td>2713</td>
+    <td>abinesh</td>
+    <td>200</td>
+  </tr>
+</table>
+<h4>The col tag specifies<mark> column properties for each column within a colgroup element.</mark>
+The <mark>col tag is useful for applying styles to entire columns, instead of repeating the styles for each cell,</mark> for each row.</h4>
+<h4>The colgroup tag specifies <mark>a group of one or more columns in a table for formatting.</mark>
+The colgroup tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.</h4>
+<hr>
+<h1>29.data</h1>
+<p>machine-readable</p>
+<ul>
+  <li><data value="21053">Tomato</data></li>
+  <li><data value="21054">Beef</data></li>
+  <li><data value="21055">Snack</data></li>
+</ul>
+<h4>The data tag is used to add a machine-readable translation of a given content.
+This element provides both a <mark>machine-readable value for data processors, and a human-readable value for rendering in a browser.</mark></h4>
+<hr>
+<h1>30.datalist</h1>
+<form action="/action_page.php" method="get">
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+<h4>The datalist tag specifies a list of pre-defined options for an input element.
+The datalist tag is used to provide an "autocomplete" feature for input elements. Users will see a drop-down list of pre-defined options as they input data.</h4>
+<hr>
+<h1><center><mark>HTML 30&45 TAG</center></mark></h1>
+<h1>31.dfn(definition)</h1>
+<p><dfn title="hypertext markup language">html</dfn> is the hypertext markup language for creating web pages.</p>
+<h4>The dfn tag stands for the "definition element", and it specifies a term that is going to be defined within the content.
+The nearest parent of the <mark>dfn tag must also contain the definition/explanation</mark> for the term.
+The term inside the dfn tag can be any of the following:</h4>
+<hr>
+<h1>32.dialog </h1>
+<dialog open>This is an open dialog window</dialog>
+<p>The dialog tag is not supported in Safari and Edge (prior version 79).</p>
+<hr>
+<h1>33.dir</h1>
+<p>Not Supported in HTML5.</p>
+<hr>
+<h1>34.div</h1>
+<div class="myDiv">
+  <h2>This is a heading in a div element</h2>
+  <p>This is some text in a div element.</p>
+</div>
+<p>This is some text outside the div element.</p>
+<hr>
+<h1>35.details</h1>
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+<hr>
+<h1>36.dl,37.dd,38.dt</h1>
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+<h4>The dl tag defines a <mark>description list.</mark></h4>
+<h4>The dt tag defines a <mark>term/name in a description list.</mark></h4>
+<h4>The dd tag is used to describe a term/name in a description list.
+The dd tag is used in conjunction with dl (defines a description list) and dt (defines terms/names).
+Inside a <mark>dd tag you can put paragraphs, line breaks, images, links, lists, etc.</mark></h4>
+<hr>
+<h1>39.em </h1>
+<p>You <em>have</em> to hurry up!</p>
+<p>We <em>cannot</em> live like this.</p>
+<hr>
+<h1>40.embed</h1>
+<embed type="image/jpg" src="C:/Users/abinesh/Desktop/FABEVY/GIT/cellphone.jpg" width="300" height="auto">
+<h4>The embed tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application.</h4>
+<hr>
+<h1>41.fieldset 42.form</h1>
+ <form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+<hr>
+<h1>43.figcaption,44.figure</h1>
+<figure>
+  <img src="C:/Users/abinesh/Desktop/FABEVY/GIT/coffee.jpg" alt="Trulli" style="width:20%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+<h4>The figcaption tag defines a caption for a figure element.
+The figcaption element can be placed as the first or last child of the figure element.</h4>
+<h4>The figure tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+While the content of the figure element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.</h4>
+<hr>
+<h1>45.Font</h1>
+<p>Not Supported in HTML5.</p>
+<hr>
+<h1><center><mark>45&70tag</mark></center></h1>
+<h1>46.FOOTER</h1>
+		<footer>
+		  <p>Author: Hege Refsnes<br>
+		  <a href="mailto:hege@example.com">hege@example.com</a></p>
+		</footer>	 
+		<hr>
+<h1>47.FRAME</h1>
+<p>Not Supported in HTML5.</p>
+<hr>
+<h1>48.FRAMESET</h1>
+<p>Not Supported in HTML5.</p>
+<hr>
+<h1>49.H1 TO H6  </h1>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+<h4>h1 defines the most <mark>important heading.</mark> h6 defines the least important heading.</h4>
+<hr>
+<h1>50.HEAD </h1>
+<hr>
+<h1>51.HTML  </h1>
+<h4>The html tag represents the <mark>root of an HTML document.</mark>
+The html tag is the container for all other HTML elements (except for the !DOCTYPE tag).
+Note: You should always include the lang attribute inside the html tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</h4>
+<hr>
+<h1>52.HEADER</h1>
+<article>
+<header>
+<h2>A heading here</h2>
+<p>Posted by John Doe</p>
+<p>Some additional information here</p>
+</header>
+<p>Lorem Ipsum dolor set amet....</p>
+</article>
+<hr>
+<h1>53.HR</h1>
+<hr style="height:5px; background-color:red">
+<hr>
+<h1>54.I</h1>
+<p>The <i>Html,css,js</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
+<h4>The i tag defines a part of text in an alternate voice or mood. The content inside is <mark>typically displayed in italic font.</mark>
+The i tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.</h4>
+<hr>
+<h1>55.IFRAME</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iIx3J8N9YCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<hr>
+<h1>56.IMG </h1>
+<img src="C:/Users/abinesh/Desktop/FABEVY/GIT/coffee.jpg "width="560" height="315" alt="image">
+<hr>
+<h1>57.INPUT</h1>
+<form>
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname"><br><br>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname"><br><br>
+<input type="submit" value="Submit">
+</form>
+<h4>The input tag specifies an input field where the <mark>user can enter data.</mark>
+The input element is the most important form element.
+The input element can be displayed in several ways, depending on the type attribute.</h4>
+<hr>
+<h1>58. INS(inserted),59.del</h1>
+<p>My favorite color is <del>ktm rc 390</del> <ins>ktm duke 390</ins></p>
+<h4>The ins tag defines a text that has been inserted into a document. Browsers will usually <mark>underline inserted text.</mark></h4>
+<hr>
+<h1>60.KBD(keyboard)</h1>
+<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+<p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+<h4>The kbd tag is used to define keyboard input. The content inside is displayed in the browser's default <mark>monospace font.</mark></h4>
+<hr>
+<h1>61.LABEL,62.LEGEND </h1>
+<form>
+<fieldset>
+<legend> FORM </legend>
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+<label for="javascript">JavaScript</label><br><br>
+<input type="submit" value="Submit">
+</fieldset>
+</form>
+<hr>
+<h1>63.LI(list item)</h1>
+<ol>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+<h4>The li tag is used <mark>inside ordered lists ol, unordered lists ul,</mark> and in menu lists menu.
+In ul and menu, the list items will usually be displayed with bullet points.
+In ol, the list items will usually be displayed with numbers or letters.</h4>
+<hr>
+<h1>64.LINK  </h1>
+The link tag defines the relationship between the current document and an external resource.
+The link tag is most often used to <mark>link to external style sheets or to add a favicon to your website.</mark>
+The link element is an empty element, it contains attributes only.</h4>
+<hr>
+<h1>65.MAIN </h1>
+<main>
+<h1>Most Popular Browsers</h1>
+<p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+<article>
+<h2>Google Chrome</h2>
+<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+<article>
+<h2>Mozilla Firefox</h2>
+<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+</article>
+<article>
+<h2>Microsoft Edge</h2>
+<p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+</article>
+</main>
+<h4>The main tag specifies the main content of a document.
+The content inside the main element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+Note: There must not be more than one main element in a document. The main element must NOT be a descendant of an article, aside, footer, header, or nav element.</h4>
+<hr>
+<h1>66.MAP </h1>
+<img src="C:/Users/abinesh/Desktop/FABEVY/GIT/coffee.jpg" alt="flower" width="200px" usemap="#workmap">
+<map name="#workmap">
+<area shape="rect" coords="362,77,516,186" alt="photo"  title="camera" href="images/top.jpg">
+<area shape="circle" coords="435,345,136" alt="photo"  title="flower" href="images/images.jpg">
+</map>
+<hr>
+<h1>67.MARK  </h1>
+<p>Do not forget to buy<mark>Html</mark> today.</p>
+<hr>
+<h1>68.META  </h1>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+The meta tag defines metadata about an HTML document.<mark>Metadata is data (information) about data.</mark>
+meta tags always go inside the head element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.
+Metadata will not be displayed on the page, but is machine parsable.
+Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.</h4>
+<hr>
+<h1>69.METER  </h1>
+<label for="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+<label for="disk_d">Disk usage D:</label>
+<meter id="disk_d" value="0.6">60%</meter>
+<h4>The meter tag defines a <mark>scalar measurement within a known range</mark>, or a fractional value. This is also known as a gauge.
+Examples: Disk usage, the relevance of a query result, etc.
+Note: The meter tag should not be used to indicate progress (as in a progress bar). For progress bars, use the progress tag.</h4>
+<hr>
+<h1>70.NAV </h1>
+<nav>
+<a href="/html/">HTML</a> |
+<a href="/css/">CSS</a> |
+<a href="/js/">JavaScript</a> |
+<a href="/python/">Python</a>
+</nav>
+<h4>The nav tag defines a set of navigation links.
+Notice that NOT all links of a document should be inside a nav element. The nav element is intended only for major blocks of navigation links.
+Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.</h4>
+<hr>
+<h1><center><mark>70&119tag</mark></center></h1>
+<hr>
+<h1>71.NOFRAMES </h1>
+<p>Not Supported in HTML5.</p>
+<hr>
+<h1>72.Noscript</h1>
+<script>
+document.write("Hello World!")
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<h4>The noscrip tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support script.
+The noscript element can be used in both head and body.When used inside head,the noscript element could only contain link,style,and meta elements.</h4>
+<hr>
+<h1>73.object</h1>
+<object data="C:/Users/abinesh/Desktop/FABEVY/GIT/coffee.jpg" width="300" height="200"></object>
+<h4>The object tag defines a container for an external resource.
+The external resource can be a <mark>web page, a picture, a media player, or a plug-in application</mark>.</h4>
+<hr>
+<h1>74.ol</h1>
+<ol>
+  <li>html</li>
+  <li>Css</li>
+  <li>Js</li>
+</ol>
+<ol start="100">
+  <li>Js</li>
+  <li>Css</li>
+  <li>html</li>
+</ol>
+<h4>The ol tag defines an ordered list.<mark>An ordered list can be numerical or alphabetical</mark>.</h4>
+<hr>
+<h1>75.optgroup,76.option</h1>
+<form action="/action_page.php">
+  <label for="bike">Choose a Bike:</label>
+  <select name="bike" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">KTM RC 390</option>
+      <option value="saab">KTM DUKE 390</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<h4>The optgroup tag is used to group related options in a select element (drop-down list).
+If you have a long list of options, groups of <mark>related options are easier to handle for a user.</mark></h4>
+<hr>
+<h1>77..output</h1>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="10">
++<input type="number" id="b" value="40">
+=<output name="x" for="a b"></output>
+</form>
+<h4>The output tag is used to <mark>represent the result of a calculation</mark>(like one performed by a script).</h4>
+<hr>
+<h1>78...p</h1>
+<p>The p tag defines a paragraph..
+Browsers automatically add a single blank line before and after each p element.</p>
+<hr>
+<h1>79.param</h1>
+<object data="C:/Users/abinesh/Desktop/FABEVY/GIT/abi 3.mp3">
+<param name="autoplay muted" value="true">
+</object>
+<h4>The param tag is used to define <mark>parameters</mark> for an object element.</h4>
+<hr>
+<h1>80.picture </h1>
+<picture>
+  <source media="(min-width:576px)" srcset="C:/Users/abinesh/Desktop/FABEVY/GIT/ktm.jpg">
+  <source media="(min-width:768px)" srcset="C:/Users/abinesh/Desktop/FABEVY/GIT/ktm 001.jpg">
+  <img src="C:/Users/abinesh/Desktop/FABEVY/GIT/ktm 001.jpg" alt="ktm" width="500px">
+</picture>
+<h4>The picture tag gives web developers more flexibility in specifying image resources.
+The most common use of the picture element will be for <mark>art direction in responsive designs</mark>. Instead of having one image that is scaled up or down based on the viewport width, multiple images can be designed to more nicely fill the browser viewport.</h4>
+<hr>
+<h1>81...pre</h1>
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre>
+<h4>The pre tag defines preformatted text.
+Text in a pre element is displayed in a <mark>fixed-width font, and the text preserves both spaces and line breaks.</mark> The text will be displayed exactly as written in the HTML source code.</h4>
+<hr>
+<h1>82.progress</h1>
+<label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100">50% </progress>
+<h4>The progress tag represents the completion progress of a task.
+Tip: Always add the label tag for best accessibility practices!</h4>
+<hr>
+<h1>83..q</h1>
+<q>Build a future where people live in harmony with nature.</q>
+<h4>The q tag defines a short quotation.
+Browsers normally insert <mark>quotation marks around the quotation.</mark></h4>
+<hr>
+<h1>84.rp,85.rt,86.ruby</h1>
+<ruby>
+漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+</ruby>
+<h4>The rp tag can be used to <mark>provide parentheses around a ruby text</mark>,to be shown by browsers that do not support ruby annotations.<br>
+The rt tag defines an <mark>explanation or pronunciation of characters</mark> (for East Asian typography) in a ruby<br>
+A ruby annotation is a small extra text,attached to the main text to indicate the pronunciation or meaning of the corresponding characters. 
+This kind of annotation is often used in <mark>Japanese publications.</mark></h4>
+<hr>
+<h1>87.s</h1>
+<s>Html,Css,Js!</s>
+<h4>The s tag specifies text that is no longer correct, accurate or relevant. The text will be displayed with a line through it.
+The s tag should not be used to <mark>define deleted text in a document,</mark> use the del tag for that.</h4>
+<hr>
+<h1>88..samp</h1>
+<p>Message from my computer:</p>
+<samp>File not found.Press F1 to continue</samp>
+<h4>The samp tag is used to define sample output from a computer program. The content inside is displayed in the browser's default <mark>monospace font.</mark>
+Tip: This tag is not deprecated. However, it is possible to achieve richer effect by using CSS.</h4>
+<hr>
+<h1>89..script</h1>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script> 
+<h4>The script tag is <mark>used to embed a client-side script (JavaScript).</mark>
+The script element either contains scripting statements, or it points to an external script file through the src attribute.</h4>
+<hr>
+<h1>90...section</h1>
+<section>
+  <h2>History</h2>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+<h4>The section tag defines a section in a document.</h4>
+<hr>
+<h1>91..select</h1>
+<form action="/action_page.php">
+  <label for="bike">Choose a Bike:</label>
+  <select name="bike" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">KTM RC 390</option>
+      <option value="saab">KTM DUKE 390</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<h4>The select element is used to create a <ins>drop-down list.</ins>
+The select element is most often used in <mark>a form, to collect user input.</mark></h4>
+<hr>
+<h1>92..small</h1>
+<p>This is some normal text.</p>
+<small>This is some smaller text.</small>
+<h4>The small tag defines smaller text (like copyright and other side-comments).
+Tip: This tag is not deprecated, but it is possible to achieve richer (or the same) effect with CSS.</h4>
+<hr>
+<h1>93.source</h1>
+<audio controls loop muted autoplay>
+  <source src="C:/Users/abinesh/Desktop/FABEVY/GIT/abi 3.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<h4>The source tag is used to specify <mark>multiple media resources for media elements, such as video,audio,and picture.</mark></h4>
+<hr>
+<h1>94..span</h1>
+<p>My mother has <span style="color:red;font-weight:bold">Html,Css,Js</span> eyes and my father has <span style="color:blue;font-weight:bold">dark greenx</span> eyes.</p>
+<h4>The span tag is an inline container used to <mark>mark up a part of a text, or a part of a document.</mark>
+The span tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.</h4>
+<hr>
+<h1>95.strike</h1>
+<p>Not Supported in HTML5.</p>
+<hr>
+<h1>96..strong</h1>
+<p>This text is normal text.</p>
+<strong>This text is strong text.</strong>
+<h4>The strong tag is used to define <mark>text with strong importance.</mark> The content inside is typically displayed in bold.
+Tip: Use the <ins>b tag to specify bold text without any extra importance!</ins></h4>
+<hr>
+<h1>97.style</h1>
+<h1 style="color:red">This is a heading</h1>
+<p style="color:blue">This is a paragraph.</p>
+<h4>The style tag is used to <mark>define style information (CSS) for a document.</mark>
+Inside the style element you specify how HTML elements should render in a browser.</h4>
+<hr>
+<h1>98..sub,99..sup</h1>
+<p>This text contains <sub>subscript</sub> text.</p>
+<p>This text contains <sup>superscript</sup> text.</p>
+<h4>The sub tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for <mark>chemical formulas,like H2O.</mark><br>
+The sup tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for <mark>footnotes, like WWW[1].</mark></h4>
+<hr>
+<h1>100.summary</h1>
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+<h4>The summary tag defines a <mark>visible heading for the details element. The heading can be clicked to view/hide the details.</mark>
+Note:The summary element should be the first child element of the details element.</h4>
+<hr>
+<h1>101.svg</h1>
+<svg width="100" height="100">
+  <circle cx="50" cy="40" r="30" stroke="blue" stroke-width="3" fill="red"/>1
+</svg>
+<h4>The svg tag defines a container for SVG graphics.
+SVG has several methods for <mark>drawing paths, boxes, circles, text, and graphic images.</mark>
+To learn more about SVG, please read our SVG Tutorial.</h4>
+<hr>
+<h1>102...Table.103.tr,104.th,105.td</h1>
+<table>
+<tr>
+<th>Month</th>
+<th>Savings</th>
+</tr>
+<tr>
+<td>January</td>
+<td>$100</td>
+</tr>
+<tr>
+<td>February</td>
+<td>$80</td>
+</tr>
+</table>
+<hr>
+<h1>106.Thead,107.TBody,108.Tfoot</h1>
+<table>
+<thead>
+<tr>
+<th>Month</th>
+<th>Savings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>January</td>
+<td>$100</td>
+</tr>
+<tr>
+<td>February</td>
+<td>$80</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td>Sum</td>
+<td>$180</td>
+</tr>
+</tfoot>
+</table>
+<h4>The <thead> element is used in conjunction with the tbody and tfoot elements to specify each part of a table (header, body, footer).</h4>
+<hr>
+<h1>109.Template</h1>
+<p> Use in JavaScript </p>
+<hr>
+<h1>110..Textarea</h1>
+<p> <label for="w3review">Review of W3Schools:</label></p>
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+com you will learn how to make a website. They offer free tutorials in all web development technologies.
+</textarea>
+<h4>The textarea tag defines a multi-line text input control.
+The textarea element is often used in a <mark>form, to collect user inputs like comments or reviews.</mark>
+A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
+The size of a text area is specified by the <ins>textarea id,name,cols,rows attributes</ins> (or with CSS).</h4>
+<hr>
+<h1>111..Time</h1>
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+<h4>The time tag defines a specific time or datetime.
+The datetime attribute of this element is used <ins>translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar,</ins> 
+and search engines can produce smarter search results.
+</h4>
+<hr>
+<h1>112.Title </h1>
+<h4>The title tag defines the <mark>title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.</mark></h4>
+<hr>
+<h1>113.Track </h1>
+<video width="320" height="240" controls>
+<source src="C:/Users/abinesh/Desktop/FABEVY/GIT/Adeiyae_pula.mp4" type="video/mp4">
+<track src="fgsubtitles_ena .vtt" kind="subtitles" srclang="en" label="English">
+</video>
+<h4>The track tag specifies text tracks for audio or video elements.
+This element is used to <mark>specify subtitles, caption files or other files containing text,</mark> that should be visible when the media is playing.</h4>
+<hr>
+<h1>114..tt</h1>
+<p>Not Supported in HTML5.</p>
+<hr>		
+<h1>115.U</h1>
+<p>This is some <u>mispeled</u> text.</p>
+<h4>The u tag <u>represents some text that is unarticulated and styled differently from normal text, such as misspelled words or proper names in Chinese text.</u> The content inside is typically displayed with an underline.
+You can change this with CSS (see example below). </h4>
+<hr>
+<h1>116...Ul</h1>
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+<hr>
+<h1>117..Var</h1>
+<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+<h4>The var tag is used to <mark>defines a variable in programming or in a mathematical expression.</mark> The content inside is typically displayed in italic.</h4>
+<hr>
+<h1>118...Video</h1>
+<video width="320" height="240" controls>
+<source src="C:/Users/abinesh/Desktop/FABEVY/GIT/Adeiyae_pula.mp4" type="video/mp4">
+</video>
+<hr>
+<h1>119.Wbr</h1>
+<p>This isThe wbr (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break <wbr>longword that will break at specific<wbr>
+places when the browser window isresized.</p>
+<h4>The wbr (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.</h4>
+<hr>
+
+ </body>
+ </html>
